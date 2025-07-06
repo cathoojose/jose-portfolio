@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import bgImage from './images/Homepage.jpg';
+import bgImage from './images/HomePages.jpg';
 
 function Home() {
   return (
