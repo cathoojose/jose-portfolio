@@ -1,0 +1,76 @@
+/* Skills.css */
+
+.skills-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 90px;
+}
+
+.skills-left, .skills-right {
+  flex: 1;
+  min-width: 90px;
+  padding: 20px;
+  gap: 50px;
+}
+
+.skills-right{
+  text-align: center;
+}
+
+.skills-left h2,
+.skills-right h2 {
+  color: darksalmon;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  margin-bottom: 15px;
+}
+
+.skill-bar span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.bar {
+  background-color: #ebe5df;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  background-color: darksalmon;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.experience-list {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-list li {
+  margin-bottom: 15px;
+}
+
+.experience-list strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.experience-list p {
+  margin: 5px 0 0;
+  color: #666;
+}

@@ -1,0 +1,35 @@
+.contact-section {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre le contenu horizontalement */
+  text-align: center;  /* centre les titres et le texte */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: darksalmon;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}

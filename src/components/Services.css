@@ -1,0 +1,73 @@
+/* Services.css */
+
+.services-section {
+  padding: 80px 20px;
+  background-color: darksalmon;
+}
+
+.services-container {
+  display: flex;
+  gap: 90px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.services-left h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.services-left p {
+  font-size: 1.1rem;
+  color: #f9f9f9;;
+  text-align: center;
+}
+
+.services-right {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  gap: 50px;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.service-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  color: darksalmon;
+}
+
+.service-description {
+  margin-top: 10px;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}

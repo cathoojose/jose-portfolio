@@ -1,0 +1,109 @@
+/* About.css */
+.about-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.container.about-content { /* Modification ici pour correspondre au JSX */
+  display: flex;
+  align-items: center;
+  gap: 90px; /* Espace augmenté entre l'image et le texte */
+}
+
+.about-text {
+  flex: 1;
+  text-align: center; /* Texte centré horizontalement */
+  padding: 20 20px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: darksalmon;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: center; /* Meilleure lecture pour les paragraphes */
+  max-width: 900px; /* Limite la largeur pour une meilleure lisibilité */
+  margin: 0 auto; 
+  padding: 20 20px;
+}
+
+.about-photo {
+  display: flex;
+  justify-content: flex-start; /* Image alignée à gauche */
+}
+
+.profile-img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 4px solid #ebe5df;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+  .container.about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-photo {
+    justify-content: center;
+  }
+}
+
+/* Ajouts dans About.css */
+
+.contact-btn-container {
+  margin-top: 30px;
+  text-align: center; /* Centrer le bouton */
+}
+
+.contact-btn {
+  background: linear-gradient(135deg, #f7666e 0%, #ea7a9b 100%);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(247, 102, 110, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(247, 102, 110, 0.4);
+  background: linear-gradient(135deg, #d14a72 0%, #f7666e 100%);
+}
+
+.contact-btn:active {
+  transform: translateY(1px);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Animation douce pour attirer l'attention */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.contact-btn:hover .btn-icon {
+  animation: pulse 1.5s infinite;
+}
